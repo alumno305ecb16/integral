@@ -21,60 +21,37 @@ $(document).ready(function(e) {
 			
 	$('#btn1i').hide();	 
 	
-	/*var numc = palabra.length;
-	for (x=0;x<=numc+1;x++) 
+	
+	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
 	{  
 	//alert(x);
 		var p=document.getElementById("p1").innerHTML;
-	 	var l=p.substring(x,x+1);
-//	alert(l);
-			
-		if(!isNaN(parseInt(l)) ) {
-	
-		
-		break;
-		}else{
-			 if (x==numc)
-			{
-				alert("FELICIDADES");
-			}
-		}
-	
-	}
-	*/
-}); 
-
-//for
-		
-$('.a1').on('click', function (){
-	
-	var p=document.getElementById("p1").innerHTML;
-	
-		var numc = p.length;
-		//alert(numc);
-	for (i=0;i<=numc+1;i++) 
-	{  
-	//alert(x);
-		p=document.getElementById("p1").innerHTML;
 	 	var l=p.substring(i,i+1);
 //	alert(l);
 			
 		if(!isNaN(parseInt(l)) ) {
 	
-	//	alert(" numero "+l)
+		
 		break;
 		}else{
-		//	alert("No numero " +l)
 			 if (i==numc-3)
 			{
-				$(location).attr('href','#juego2'); 
-				
+				$(location).attr('href','#juego2');
 			}
 		}
 	
 	}
 	
 }); 
+
+//for
+		
+		
+		
+	
+ 
 
 
  $('#btn1n').on('click', function (){
@@ -85,7 +62,27 @@ $('.a1').on('click', function (){
 	var letra=palabra.substring(2,3);
 	var rem=palabra.replace(2,"N") 
 	$("#p1").text(rem);
-	$('#btn1n').hide();	 
+	$('#btn1n').hide();	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	} 
 }); 
 
 $('#btn1t').on('click', function (){
@@ -97,6 +94,26 @@ $('#btn1t').on('click', function (){
 	var rem=palabra.replace(3,"T") 
 	$("#p1").text(rem);
 	$('#btn1t').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 }); 
 
 $('#btn1e').on('click', function (){
@@ -108,6 +125,26 @@ $('#btn1e').on('click', function (){
 	var rem=palabra.replace(4,"E") 
 	$("#p1").text(rem);
 	$('#btn1e').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });
 
 $('#btn1g').on('click', function (){
@@ -119,6 +156,26 @@ $('#btn1g').on('click', function (){
 	var rem=palabra.replace(5,"G") 
 	$("#p1").text(rem);
 	$('#btn1g').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1r').on('click', function (){
@@ -129,7 +186,27 @@ $('#btn1r').on('click', function (){
 	var letra=palabra.substring(10,11);
 	var rem=palabra.replace(6,"R") 
 	$("#p1").text(rem);
-	$('#btn1r').hide();	 
+	$('#btn1r').hide();	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1a').on('click', function (){
@@ -141,6 +218,26 @@ $('#btn1a').on('click', function (){
 	var rem=palabra.replace(7,"A") 
 	$("#p1").text(rem);
 	$('#btn1a').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1l').on('click', function (){
@@ -151,7 +248,27 @@ $('#btn1l').on('click', function (){
 	var letra=palabra.substring(14,15);
 	var rem=palabra.replace(8,"L") 
 	$("#p1").text(rem);
-	$('#btn1l').hide();	 
+	$('#btn1l').hide();	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	} 
 });  
 
 $('#btn1i2').on('click', function (){
@@ -162,7 +279,27 @@ $('#btn1i2').on('click', function (){
 	var letra=palabra.substring(16,17);
 	var rem=palabra.replace(9,"I") 
 	$("#p1").text(rem);
-	$('#btn1i2').hide();	 
+	$('#btn1i2').hide();
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}	 
 });  
 
 $('#btn1n2').on('click', function (){
@@ -174,7 +311,27 @@ $('#btn1n2').on('click', function (){
 	//alert(letra);
 	var rem=palabra.replace(10,"N") 
 	$("#p1").text(rem);
-	$('#btn1n2').hide();	 
+	$('#btn1n2').hide();	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	} 
 });  
 
 $('#btn1m').on('click', function (){
@@ -187,6 +344,26 @@ $('#btn1m').on('click', function (){
 	var rem=palabra.replace(11,"M") 
 	$("#p1").text(rem);
 	$('#btn1m').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1e2').on('click', function (){
@@ -198,7 +375,27 @@ $('#btn1e2').on('click', function (){
 	//alert(letra);
 	var rem=palabra.replace(12,"E") 
 	$("#p1").text(rem);
-	$('#btn1e2').hide();	 
+	$('#btn1e2').hide();
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}	 
 });  
 
 $('#btn1d').on('click', function (){
@@ -210,6 +407,26 @@ $('#btn1d').on('click', function (){
 	var rem=palabra.replace(13,"D") 
 	$("#p1").text(rem);
 	$('#btn1d').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1i3').on('click', function (){
@@ -220,7 +437,27 @@ $('#btn1i3').on('click', function (){
 	var letra=palabra.substring(26,28);
 	var rem=palabra.replace(14,"I") 
 	$("#p1").text(rem);
-	$('#btn1i3').hide();	 
+	$('#btn1i3').hide();	
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	} 
 });  
 
 $('#btn1a2').on('click', function (){
@@ -232,6 +469,26 @@ $('#btn1a2').on('click', function (){
 	var rem=palabra.replace(15,"A") 
 	$("#p1").text(rem);
 	$('#btn1a2').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1t2').on('click', function (){
@@ -243,6 +500,26 @@ $('#btn1t2').on('click', function (){
 	var rem=palabra.replace(16,"T") 
 	$("#p1").text(rem);
 	$('#btn1t2').hide();	 
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}
 });  
 
 $('#btn1a3').on('click', function (){
@@ -253,9 +530,41 @@ $('#btn1a3').on('click', function (){
 	var letra=palabra.substring(26,28);
 	var rem=palabra.replace(17,"A") 
 	$("#p1").text(rem);
-	$('#btn1a3').hide();	 
+	$('#btn1a3').hide();
+	var numc = palabra.length;
+	for (i=0;x<=numc+1;i++) 
+	{  
+	//alert(x);
+		var p=document.getElementById("p1").innerHTML;
+	 	var l=p.substring(i,i+1);
+//	alert(l);
+			
+		if(!isNaN(parseInt(l)) ) {
+	
+		
+		break;
+		}else{
+			 if (i==numc-3)
+			{
+				$(location).attr('href','#juego2');
+			}
+		}
+	
+	}	 
 }); 
 
+/*
+$('#btn2f').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(1,"F") 
+	$("#p2").text(rem);
+	$('#btn2f').hide();	 
+}); 
+*/
 
 	
 
@@ -303,5 +612,9 @@ $('.n').on('click', function (){
 		
 	}
 });
+
+
+
+
 });
 
