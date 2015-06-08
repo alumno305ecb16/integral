@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
-document.addEventListener("deviceready",function(){
+//document.addEventListener("deviceready",function(){
 	
 		 
 		 
@@ -52,7 +52,7 @@ $('.a1').on('click', function (){
 	
 		var numc = pa.length;
 		//alert(numc);
-	for (i=0;i<=numc+2;i++) 
+	for (i=0;i<=numc;i++) 
 	{  
 	//alert(i);
 	//alert(x);
@@ -60,36 +60,42 @@ $('.a1').on('click', function (){
 	 var num = p.length;
 	 	var l=p.substring(i,i+1);
 
-	
+	//alert(num+" "+i)
 	if(isNaN(parseInt(l)) ) {
+		
+			if (i==num-2)
+				{			
+					
+					if(y>2)
+					{
+						//alert("break1");
+						y=0
+						break;
+					}else{
+						//alert("Segundo Nivel");
+						$(location).attr('href','#juego2');	
+					}
+				}		 
+	}else{
 			
-			if(i==num)
-			{
-				//alert(i+"  " +num);
-				//alert("Entro")
-				$(location).attr('href','#juego2');
-				var x=0;
-			}else{
-				//alert("No entro");
-				
-			}
-				 
-		}else{
-			//alert(" numero")
 			 y=y+1;
 			 
+		if (i==num-2)
+		{
 			
-			 
-			 if(y==3)
+			 if(y>2)
 			 {
 				y=0;
+			
 				break;
-			}else if(y==2)
-			 {
-				y=0;
-				break;
+		}else
+			{
+				//alert("2 Nivel")
+				$(location).attr('href','#juego2');
+				var x=0;
 			}
-			 
+			
+		}
 			
 		}
 	
@@ -430,4 +436,4 @@ $('.n').on('click', function (){
 
 
 });
-});
+//});
