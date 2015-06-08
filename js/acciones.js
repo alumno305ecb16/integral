@@ -68,6 +68,7 @@ $('.a1').on('click', function (){
 				//alert(i+"  " +num);
 				//alert("Entro")
 				$(location).attr('href','#juego2');
+				var x=0;
 			}else{
 				//alert("No entro");
 				
@@ -76,12 +77,19 @@ $('.a1').on('click', function (){
 		}else{
 			//alert(" numero")
 			 y=y+1;
+			 
+			
+			 
 			 if(y==3)
 			 {
-				//alert("No      "+y);
+				y=0;
+				break;
+			}else if(y==2)
+			 {
 				y=0;
 				break;
 			}
+			 
 			
 		}
 	
@@ -268,7 +276,7 @@ $('#btn1a3').on('click', function (){
 	$('#btn1a3').hide();	 
 }); 
 
-/*
+
 $('#btn2f').on('click', function (){
 		
 	 var palabra=document.getElementById("p2").innerHTML;
@@ -279,10 +287,100 @@ $('#btn2f').on('click', function (){
 	$("#p2").text(rem);
 	$('#btn2f').hide();	 
 }); 
-*/
 
+$('#btn2u').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(2,"U") 
+	$("#p2").text(rem);
+	$('#btn2u').hide();	 
+}); 
+
+$('#btn2n').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(3,"N") 
+	$("#p2").text(rem);
+	$('#btn2n').hide();	 
+}); 
+
+$('#btn2c').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(4,"C") 
+	$("#p2").text(rem);
+	$('#btn2c').hide();	 
+}); 
+
+$('#btn2i').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(5,"I") 
+	$("#p2").text(rem);
+	$('#btn2i').hide();	 
+}); 
+
+$('#btn2o').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(6,"O") 
+	$("#p2").text(rem);
+	$('#btn2o').hide();	 
+}); 
+$('#btn2n2').on('click', function (){
+		
+	 var palabra=document.getElementById("p2").innerHTML;
+	var palabra=palabra.toString();
+
+	var letra=palabra.substring(2,3);
+	var rem=palabra.replace(7,"N") 
+	$("#p2").text(rem);
+	$('#btn2n2').hide();	 
+}); 
+
+$('.intenar').on('click', function (){	
+	$("#p1").text("1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17");
+	$('#btn1i').show();
+	$('#btn1n').show();
+	$('#btn1t').show();
+	$('#btn1e').show();
+	$('#btn1g').show();
+	$('#btn1r').show();
+	$('#btn1a').show();
+	$('#btn1l').show();
+	$('#btn1i2').show();
+	$('#btn1n2').show();
+	$('#btn1m').show();
+	$('#btn1e2').show();
+	$('#btn1d').show();
+	$('#btn1i3').show();
+	$('#btn1a2').show();
+	$('#btn1t2').show();
+	$('#btn1a3').show();
+	$('#btn1q').show();
+	$('#btn1f').show();
+	$('#btn1b').show();
+	$('#btn1s').show();
+	$('#btn1v').show();
+	$('#btn1u').show();
+	$("#imagen").attr("src","images/p1.jpg");
 	
-
+});
 
 	x=0;
 $('.n').on('click', function (){
@@ -299,9 +397,9 @@ $('.n').on('click', function (){
 		$("#imagen").attr("src","images/p5.jpg");	
 	}else{
 		$("#imagen").attr("src","images/p7.jpg");
-		
+		 x=0;
 		$(location).attr('href','#perdedor');    
-		   
+		  
 	}
 	var oid = $(this).attr("id");
 	switch(oid)
