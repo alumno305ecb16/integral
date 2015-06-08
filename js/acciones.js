@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
-//document.addEventListener("deviceready",function(){
+document.addEventListener("deviceready",function(){
 	
 		 
 		 
@@ -436,4 +436,4 @@ $('.n').on('click', function (){
 
 
 });
-//});
+});
