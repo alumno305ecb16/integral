@@ -42,16 +42,16 @@ $('.a1').on('click', function (){
 	
 	var	p=document.getElementById("p1").innerHTML;
 	 var num = p.length;
-	 	var l=p.substring(i,i+1);
+		var l=p.substring(i,i+1);
 
 	//alert(num+" "+i)
 	if(isNaN(parseInt(l)) ) {
 		
 		
-			if (i==num-1)
+			if (i==num-2)
 				{			
 					
-					if(y>1)
+					if(y>2)
 					{
 						//alert("break1");
 						y=0
@@ -70,10 +70,10 @@ $('.a1').on('click', function (){
 			 y=y+1;
 			 
 			
-		if (i==num-1)
+		if (i==num-2)
 		{
 			
-			 if(y>1)
+			 if(y>2)
 			 {
 				y=0;
 			
