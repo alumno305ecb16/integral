@@ -56,6 +56,10 @@ $('.a1').on('click', function (){
 						//alert("break1");
 						y=0
 						break;
+					}else if(y>0)
+					{
+						y=0
+						break;
 					}else{
 						//alert("Segundo Nivel");
 						
@@ -78,6 +82,11 @@ $('.a1').on('click', function (){
 				y=0;
 			
 				break;
+			}else if(y>0)
+			{
+				y=0
+				break;
+					
 			}else
 			{
 				//alert("2 Nivel")
