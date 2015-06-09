@@ -494,7 +494,7 @@ $('.a2').on('click', function (){
 			if (i==num-1)
 				{			
 					
-					if(y2>2)
+					if(y2>1)
 					{
 						
 						y2=0
@@ -514,7 +514,7 @@ $('.a2').on('click', function (){
 		if (i==num-1)
 		{
 			
-			 if(y2>2)
+			 if(y2>1)
 			 {
 				y2=0;
 			
