@@ -51,7 +51,7 @@ $('.a1').on('click', function (){
 			if (i==num)
 				{			
 					
-					if(y>2)
+					if(y>1)
 					{
 						//alert("break1");
 						y=0
@@ -73,7 +73,7 @@ $('.a1').on('click', function (){
 		if (i==num)
 		{
 			
-			 if(y>2)
+			 if(y>1)
 			 {
 				y=0;
 			
