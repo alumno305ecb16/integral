@@ -443,7 +443,8 @@ $('.n').on('click', function (){
 	}else{
 		$("#imagen").attr("src","images/p7.jpg");
 		 x=0;
-		$(location).attr('href','#perdedor');    
+		$(location).attr('href','#perdedor');  
+		$("#numperdi").text(suma1+suma2);  
 		  
 	}
 	var oid = $(this).attr("id");
@@ -494,7 +495,7 @@ $('.a2').on('click', function (){
 			if (i==num-1)
 				{			
 					
-					if(y2>1)
+					if(y2>0)
 					{
 						
 						y2=0
@@ -514,7 +515,7 @@ $('.a2').on('click', function (){
 		if (i==num-1)
 		{
 			
-			 if(y2>1)
+			 if(y2>0)
 			 {
 				y2=0;
 			
@@ -559,7 +560,7 @@ $('.n2').on('click', function (){
 		{
 			$("#imagen2").attr("src","images/p7.jpg");
 			x2=0;
-			$("#numperdi").text(suma2);
+			$("#numperdi").text(suma1+suma2);
 			$(location).attr('href','#perdedor');
 			
 		}
