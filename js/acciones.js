@@ -48,7 +48,7 @@ $('.a1').on('click', function (){
 	if(isNaN(parseInt(l)) ) {
 		
 		
-			if (i==num-3)
+			if (i==num)
 				{			
 					
 					if(y>2)
@@ -70,7 +70,7 @@ $('.a1').on('click', function (){
 			 y=y+1;
 			 
 			
-		if (i==num-3)
+		if (i==num)
 		{
 			
 			 if(y>2)
