@@ -47,7 +47,7 @@ $('.a1').on('click', function (){
 	//alert(num+" "+i)
 	if(isNaN(parseInt(l)) ) {
 		
-			if (i==num-1)
+			if (i==num-2)
 				{			
 					
 					if(y>2)
@@ -68,7 +68,7 @@ $('.a1').on('click', function (){
 			
 			 y=y+1;
 			 
-		if (i==num-1)
+		if (i==num-2)
 		{
 			
 			 if(y>2)
@@ -405,6 +405,7 @@ $('#intenar').on('click', function (){
 	$('#btn1s').show();
 	$('#btn1v').show();
 	$('#btn1u').show();
+	sumatotal=sumatotal-suma1;
 	$("#imagen").attr("src","images/p1.jpg");
 	$(location).attr('href','#juego');	
 }else if(sumatotal>=17)
@@ -423,10 +424,11 @@ $('#intenar').on('click', function (){
 	$('#btn2j').show();
 	$('#btn2n2').show();
 	$('#btn2o').show();
+	sumatotal=sumatotal-suma2;
 	$(location).attr('href','#juego2');	
 }	
 });
-
+//////JUEGO 1 PERDEDOR
 	x=0;
 $('.n').on('click', function (){
 	x=x+1;
