@@ -47,7 +47,8 @@ $('.a1').on('click', function (){
 	//alert(num+" "+i)
 	if(isNaN(parseInt(l)) ) {
 		
-			if (i==num-2)
+		
+			if (i==num-3)
 				{			
 					
 					if(y>2)
@@ -68,7 +69,8 @@ $('.a1').on('click', function (){
 			
 			 y=y+1;
 			 
-		if (i==num-2)
+			
+		if (i==num-3)
 		{
 			
 			 if(y>2)
@@ -76,7 +78,7 @@ $('.a1').on('click', function (){
 				y=0;
 			
 				break;
-		}else
+			}else
 			{
 				//alert("2 Nivel")
 				
