@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(e) {	
 document.addEventListener("deviceready",function() {
-var arreglopalabras = ['INTEGRALIMEDIATA','FUNCION','DERIVADA','SUSTITUCION','SUSTITUCION','VARIABLEAUXILIAR','ANTIDERIVADA','FACTORIZACION','INTEGRALDEFINIDO','AREABAJOLACURVA'];
+var arreglopalabras = ['INTEGRALIMEDIATA','FUNCION','DERIVADA','LOGARITMO','SUSTITUCION','VARIABLEAUXILIAR','ANTIDERIVADA','FACTORIZACION','INTEGRALDEFINIDO','AREABAJOLACURVA'];
 var cualpalabra = 0;
 var palabraactual = "";
 var arreglopalabra = [];
