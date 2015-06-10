@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
  <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
  
-        <title>INTEGRALES</title>
+        <title>Fred</title>
 
         <!--grupo CSS-->
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
-        
+        <link rel="stylesheet" href="css/mas.css" />
+        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
         
 
 
@@ -23,165 +24,38 @@
  </head>
 
  <body>
- 
- 
- <div data-role="page" id="principal" >   
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>PRINCIPAL</h1>
-        </div>
-         <div data-role="main" class="ui-content" >
-         <div align="center">
-        
-		<a href="#juego" id="btniniciarjuego"><button class="ui-btn ui-btn-b" id="ijuego">INICIAR JUEGO</button></a>
-         </div>
-         </div>
-         </div>
- 
-  
-<!-- juego1 -->
-     <div data-role="page" id="juego" >   
-     	
-        <div style="width:100%; float:left" align="right" id="sigp2"><a href="#juego2" class="ui-btn ui-shadow ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all ui-btn-icon-notext"></a></div> 
-        
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>1 NIVEL</h1>
-        </div>
-        
-        
-         <div data-role="main" class="ui-content" >
-         <div align="center">
+<!-- Principal -->
+     <div data-role="page" id="principal" >   
+
+     
          
-         <img width="150" height="150" src="images/p1.jpg" id="imagen">
-         
-         <label id="p1">1 2 3 4 5 6 7 8  9 10 11 12 13 14 15 16 17</label>
-            <font size="7">
-            <a href="#" id="btn1m" class="a1">M</a>
-            <a href="#" id="btn1n" class="a1">N</a>
-            <a href="#" id="btn1e" class="a1">E</a>
-            <a href="#" id="btn1r" class="a1">R</a>
-            <a href="#" id="btn1v" class="n">V</a>
-            <a href="#" id="btn1l" class="a1">L</a>
-            <a href="#" id="btn1i2" class="a1">I</a>
-            <a href="#" id="btn1a" class="a1">A</a>
-            <a href="#" id="btn1q" class="n">Q</a>
-            <a href="#" id="btn1i" class="a1">I</a>
-            <a href="#" id="btn1t" class="a1">T</a>
-            <a href="#" id="btn1d" class="a1">D</a>
-            <a href="#" id="btn1s" class="n">S</a>
-            <a href="#" id="btn1n2" class="a1">N</a>
-            
-            <a href="#" id="btn1u" class="n">U</a>
+         <div data-role="main" class="ui-content" align="center">
+         <div id="palabra" style="text-align:center">
+         &nbsp;
+         </div>
+         <br>
+          <div id="contendor">
+          <div id="prev_let" class="letras">
+              <i class="ion-chevron-left icon-big no-select"></i>
+          </div>
+          <div id="act_let" class="letras no-select">
+           
+          </div>
+          <div id="next_let" class="letras">
+                        <i class="ion-chevron-right icon-big no-select"></i>
+          </div>
           
-            <a href="#" id="btn1t2" class="a1">T</a>
-            <a href="#" id="btn1i3" class="a1">I</a>
-            <a href="#" id="btn1g" class="a1">G</a>
-            <a href="#" id="btn1e2" class="a1">E</a>
-            <a href="#" id="btn1b" class="n">B</a>
-            <a href="#" id="btn1a2" class="a1">A</a>
-            <a href="#" id="btn1f" class="n">F</a>
-            <a href="#" id="btn1a3" class="a1">A</a>
-            </font>
-         </div>
-         
+          <div>
+            <img width="70" height="120" src="images/p1.jpg" id="imagen">
+          </div>
+          </div>
         </div>
-        
-        
-        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-         
-        </div>        
         
      </div>
   
 <!-- Principal -->
 
 
-  <div data-role="page" id="juego2" >   
-  <div style="width:100%; float:left" align="right" id="sigp3"><a href="#juego3" class="ui-btn ui-shadow ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all ui-btn-icon-notext"></a></div> 
-  
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>2 NIVEL</h1>
-        </div>
-         <div data-role="main" class="ui-content" >
-         <div align="center">
-         
-			<img width="150" height="150" src="images/p1.jpg" id="imagen2">
-         
-         <label id="p2">1 2 3 4 5 6 7</label>
-	 <font size="7">
-   		 	<a href="#" id="btn2a" class="n2">A</a>
-            <a href="#" id="btn2u" class="a2">U</a>
-            <a href="#" id="btn2e" class="n2">E</a>
-            <a href="#" id="btn2c" class="a2">C</a>
-            <a href="#" id="btn2f" class="a2">F</a>
-            <a href="#" id="btn2l" class="n2">L</a>
-            <a href="#" id="btn2i" class="a2">I</a>
-            <a href="#" id="btn2d" class="n2">D</a>
-            <a href="#" id="btn2n" class="a2">N</a>
-            <a href="#" id="btn2j" class="n2">J</a>
-            <a href="#" id="btn2n2" class="a2">N</a>
-            <a href="#" id="btn2o" class="a2">O</a>
-    </font>
-    </div>
-    </div>
-    </div>
-
-
-<div data-role="page" id="juego3" >   
-     	
-        <div style="width:100%; float:left" align="right" id="sigp4"><a href="#juego4" class="ui-btn ui-shadow ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all ui-btn-icon-notext"></a></div> 
-        
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>3 NIVEL</h1>
-        </div>
-        
-        
-         <div data-role="main" class="ui-content" >
-         <div align="center">
-         
- </div>
- </div>
- </div>
-         
-         
-
-
-
-
-
- <div data-role="page" id="perdedor" >   
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>FIN DEL JUEGO</h1>
-        </div>
-         <div data-role="main" class="ui-content" >
-         <div align="center">
-         <font face="Arial Black, Gadget, sans-serif" color="#FF0000" size="10"><div id="numperdi"></div></font>
-         
-              
-         </div>
-         
-        </div>
-        
-        
-        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-        <div data-role="navbar">
-          <ul><li><a href="#" data-icon="refresh" id="intenar">INTENTAR OTRA VEZ</a></li></ul>
-          </div>
-        </div>        
-        
-     </div>
-  
-         
-          <div data-role="page" id="ganador" >   
-        <div data-role="header" data-position="fixed" data-tap-toggle="false">     
-         <h1>FELICIDADEZ</h1>
-        </div>
-         <div data-role="main" class="ui-content" >
-         <div align="center">
-         
-         </div>
-         </div>
-         </div>
-         
 
  </body>
-</html> 
+</html>
