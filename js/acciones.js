@@ -1,5 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
+document.addEventListener("deviceready",function() {
 var arreglopalabras = ['INTEGRALIMEDIATA','FUNCION','DERIVADA','SUSTITUCION','SUSTITUCION','VARIABLEAUXILIAR','ANTIDERIVADA','FACTORIZACION','INTEGRALDEFINIDO','AREABAJOLACURVA'];
 var cualpalabra = 0;
 var palabraactual = "";
@@ -34,7 +35,7 @@ function inicio() {
    }
   }
  }
-//document.addEventListener("deviceready",function() {
+//
 inicio();
 	$('#act_let').text(arregloletras[0]);
 	
@@ -178,4 +179,4 @@ actual--;
 	  }
   }
 });
-//});
+});
