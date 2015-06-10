@@ -34,7 +34,7 @@ function inicio() {
    }
   }
  }
-document.addEventListener("deviceready",function() {
+//document.addEventListener("deviceready",function() {
 inicio();
 	$('#act_let').text(arregloletras[0]);
 	
@@ -178,4 +178,4 @@ actual--;
 	  }
   }
 });
-});
+//});
