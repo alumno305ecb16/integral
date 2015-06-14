@@ -220,6 +220,20 @@ $(document).ready(function(e) {
 							case 11:
 								$(location).attr('href','#resultado'); 
 								$('#resultadofinal').html(suma);	
+								if(suma<=60){
+									$('#rango').html("MALO");
+									$("#rango").css("background-color","#FF0000")			
+								}else if(suma<=80)
+								{
+									$('#rango').html("REGULAR");
+									$("#rango").css("background-color","#FFFF00")
+								}else if(suma<=100){
+									$('#rango').html("BUENO");
+									$("#rango").css("background-color","#40FF00")
+								}else{
+									$('#rango').html("EXCELENTE");	
+									$("#rango").css("background-color","#04B404")
+								}
 								break;
 						}
 						$('#palabra').html(palabra);	
