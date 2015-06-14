@@ -160,6 +160,7 @@ $(document).ready(function(e) {
 		$("#imagen").attr("src","images/p5.jpg");
 		break;
 		case 0:
+			alert("Se terminaron tus oportunidades");
 					juegopalabra=juegopalabra+1;
 					
 						switch (juegopalabra)
