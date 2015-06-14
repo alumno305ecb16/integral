@@ -19,7 +19,7 @@ document.addEventListener("deviceready",function(){
 	
 		var suma=0;
 		
-		$('.a1').on('click', function (){
+		$('.a1').on('tap', function (){
 						
 		var idletra = $(this).attr('id')
 		var existe = false;
@@ -44,7 +44,7 @@ document.addEventListener("deviceready",function(){
 				
 				$("#palabra").text(remplaso);
 				 palabra=document.getElementById("palabra").innerHTML;
-			//alert(remplaso+"      "+palabra)
+			
 					if(palabra==pal)
 					{
 						juegopalabra=juegopalabra+1;
@@ -125,6 +125,7 @@ document.addEventListener("deviceready",function(){
 								}
 								
 						}
+						$('.a1').show();
 						$('#palabra').html(palabra);	
 						
 						$("#imagen").attr("src","images/p1.jpg");
@@ -238,13 +239,13 @@ document.addEventListener("deviceready",function(){
 								}
 								break;
 						}
+						
 						$('#palabra').html(palabra);	
 		
 						$("#imagen").attr("src","images/p1.jpg");
 						oportunidades = 4;
 	}
-		var idletra = $(this).attr('id')
-		$('#'+idletra).hide();
+		
 		//break;
 			}
 		
