@@ -19,7 +19,7 @@ document.addEventListener("deviceready",function(){
 	
 		var suma=0;
 		
-		$('.a1').on('tap', function (){
+		$('.a1').on('click', function (){
 						
 		var idletra = $(this).attr('id')
 		var existe = false;
