@@ -1,52 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-#contenedor
-{
-	width:60%;
-}
-
-#palabra
-{
-	background-color:#FFF;
-
-	font-style:normal;
-		font-size:4em;
-	font-weight:bold;
-
-}
-
 span
 {
-			color:#FFF;
-	 text-shadow: 0 0 0 #FFF; 
-}
-.letras
-{
-	font-size:4em;
-	font-weight:bold;
-		display:inline-block;
-		padding:10px;	
-}
-
-#act_let
-{
-	width:30%;
-	text-align:center;	
-}
-
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.icon-big
-{
-	display:block;
-	margin-bottom:1px;
-	color:#E67E22;
+ color:#000;	
 }
