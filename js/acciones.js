@@ -213,7 +213,7 @@ $(document).ready(function(e) {
 								$('#titulo').html("NIVEL 9");
 								break;
 							case 10:
-								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 ° . 3 0";
+								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 / . 3 0";
 						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 10");
 								break;
