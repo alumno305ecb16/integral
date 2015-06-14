@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
-document.addEventListener("deviceready",function(){
+//document.addEventListener("deviceready",function(){
 
 		var suma=0;
 			
@@ -100,14 +100,28 @@ document.addEventListener("deviceready",function(){
 								$('#titulo').html("NIVEL 9");
 								break;
 							case 10:
-								palabra ="{ _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 0 8";
-						 		pal="I N T E G R A L D E F I N I D O";
+								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 ° . 3 0";
+						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 10");
 								break;
 							case 11:
-								alert("Definimos Integral Definida de f(x) entre a y b, al ´area de la región limitada por la funci´on f(x) entre los puntos a y b y el eje OX.");
+								alert("cos² α + sen² α = 1-------- sec² α = 1 + tg² α------- cosec² α = 1 + cotg² α");
 								$(location).attr('href','#resultado'); 
 								$('#resultadofinal').html(suma);	
+								if(suma<=60){
+									$('#rango').html("MALO");
+									$("#rango").css("background-color","#FF0000")			
+								}else if(suma<=80)
+								{
+									$('#rango').html("REGULAR");
+									$("#rango").css("background-color","#FFFF00")
+								}else if(suma<=100){
+									$('#rango').html("BUENO");
+									$("#rango").css("background-color","#40FF00")
+								}else{
+									$('#rango').html("EXCELENTE");	
+									$("#rango").css("background-color","#04B404")
+								}
 								
 						}
 						$('#palabra').html(palabra);	
@@ -199,8 +213,8 @@ document.addEventListener("deviceready",function(){
 								$('#titulo').html("NIVEL 9");
 								break;
 							case 10:
-								palabra ="{ _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 0 8";
-						 		pal="I N T E G R A L D E F I N I D O";
+								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 ° . 3 0";
+						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 10");
 								break;
 							case 11:
@@ -233,4 +247,4 @@ document.addEventListener("deviceready",function(){
 		});
 	
 });
-});
+//0});
