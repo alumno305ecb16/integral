@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
-//document.addEventListener("deviceready",function(){
+document.addEventListener("deviceready",function(){
 
 		var suma=0;
 			
@@ -48,6 +48,7 @@ $(document).ready(function(e) {
 					if(palabra==pal)
 					{
 						juegopalabra=juegopalabra+1;
+						$('.a1').show();
 						switch (juegopalabra)
 						{
 							
@@ -125,7 +126,7 @@ $(document).ready(function(e) {
 								
 						}
 						$('#palabra').html(palabra);	
-						$('.a1').show();
+						
 						$("#imagen").attr("src","images/p1.jpg");
 						oportunidades = 4;
 					}else{
@@ -162,7 +163,7 @@ $(document).ready(function(e) {
 		case 0:
 			alert("Se terminaron tus oportunidades");
 					juegopalabra=juegopalabra+1;
-					
+					$('.a1').show();
 						switch (juegopalabra)
 						{
 							case 2:
@@ -238,7 +239,7 @@ $(document).ready(function(e) {
 								break;
 						}
 						$('#palabra').html(palabra);	
-						$('.a1').show();
+		
 						$("#imagen").attr("src","images/p1.jpg");
 						oportunidades = 4;
 	}
@@ -260,6 +261,17 @@ $(document).ready(function(e) {
 			oportunidades = 4;
 			juegopalabra = 1;
 		});
+		
+		$('#inicio1').on('tap', function (){
+			palabra ="- + ? ¿ ] [ 1 * # $ % / ! . , = _";
+			$('#palabra').html(palabra);
+			pal="I N T E G R A L I N M E D I A T A";
+			$('.a1').show();
+			$('#titulo').html("NIVEL 1");
+			suma=0;
+			oportunidades = 4;
+			juegopalabra = 1;
+		});
 	
 });
-//0});
+});
