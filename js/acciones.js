@@ -164,65 +164,67 @@ document.addEventListener("deviceready",function(){
 		$("#imagen").attr("src","images/p5.jpg");
 		break;
 		case 0:
-			alert("Se terminaron tus oportunidades");
+		//	alert("Se terminaron tus oportunidades");
 					juegopalabra=juegopalabra+1;
 					$('.a1').show();
 						switch (juegopalabra)
 						{
 							case 2:
-								
+								alert("PALABRA CORRECTA:  INTEGRAL INMEDIATA");
 								palabra ="_ 1 * # $ + .";
 						 		pal="F U N C I O N";
 								$('#titulo').html("NIVEL 2");
 								break;
 							case 3:
-								
+								alert("PALABRA CORRECTA:  FUNCION");
 								palabra ="- * + } { _ ? ( ) # 2 6 !";
 						 		pal="F A C T O R I Z A C I O N";
 								$('#titulo').html("NIVEL 3");
 								break;
 							case 4:
-								
+								alert("PALABRA CORRECTA:  FACTORIZACION");
 								palabra ="{ } 4 . _ ¿ ? *";
 						 		pal="D E R I V A D A";
 								$('#titulo').html("NIVEL 4");
 								break;
 							case 5:
-								
+								alert("PALABRA CORRECTA:  DERIVADA");
 								palabra ="* _ } { ¡ ! ? ¿ . 1 [ 4";
 						 		pal="A N T I D E R I V A D A";
 								$('#titulo').html("NIVEL 5");
 								break;
 							case 6:
-								
+								alert("PALABRA CORRECTA:  ANTIDERIVADA");
 								palabra ="} { _ - , : . ? ¡ ! 1";
 						 		pal="S U S T I T U C I O N";
 								$('#titulo').html("NIVEL 6");
 								break;
 							case 7:
-								
+								alert("PALABRA CORRECTA:  SUSTITUCION");
 								palabra ="- _ ! 2 ¡ ? } { # $ % / ( ) 3 6 . , = ¿ 9 * ] [";
 						 		pal="F U N C I O N E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 7");
 								break;
 							case 8:
-								
+								alert("PALABRA CORRECTA:  FUNCIONES TRIGONOMETRICAS");
 								palabra ="+ * { } , . ? 5 ] [ 1 8 ¡ ! ¿";
 						 		pal="A R E A B A J O L A C U R V A";
 								$('#titulo').html("NIVEL 8");
 								break;
 							case 9:
-							
+								alert("PALABRA CORRECTA:  AREA BAJO LA CURVA");
 								palabra ="* _ . , 9 ¡ ! ¿ ? + ; % $ = 2 6";
 						 		pal="V A R I A B L E A U X I L I A R";
 								$('#titulo').html("NIVEL 9");
 								break;
 							case 10:
+								alert("PALABRA CORRECTA:  VARIABLE AUXILIAR");
 								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 / . 3 0";
 						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 10");
 								break;
 							case 11:
+								alert("PALABRA CORRECTA:  IDENTIDADES TRIGONOMETRICAS");
 								$(location).attr('href','#resultado'); 
 								$('#resultadofinal').html(suma);	
 								if(suma<=60){
@@ -287,9 +289,13 @@ document.addEventListener("deviceready",function(){
 							if(mod==0){
 									var l=palabra.charAt(i);
 									var lp=pal.charAt(i);
-									//alert(lp);
-									//var sig=palabra.charAt(i);
-									if(l=="A" || l=="B"||l=="C"||l=="D"||l=="E"||l=="F"||l=="G"||l=="H"||l=="I"||l=="J"||l=="K"||l=="L"||l=="M"||l=="N"||l=="O"||l=="P"||l=="Q"||l=="R"||l=="S"||l=="T"||l=="U"||l=="V"||l=="W"||l=="X"||l=="Y"||l=="Z"){
+									
+									
+									
+												
+									
+									
+				if(l=="A" || l=="B"||l=="C"||l=="D"||l=="E"||l=="F"||l=="G"||l=="H"||l=="I"||l=="J"||l=="K"||l=="L"||l=="M"||l=="N"||l=="O"||l=="P"||l=="Q"||l=="R"||l=="S"||l=="T"||l=="U"||l=="V"||l=="W"||l=="X"||l=="Y"||l=="Z"){
 									//	alert("Letra");
 									
 									}else{
@@ -297,20 +303,111 @@ document.addEventListener("deviceready",function(){
 										$("#palabra").text(remplaso);
 										palabra=document.getElementById("palabra").innerHTML;
 										pasofor=pasofor+1;
-										if(pasofor==1){
-											pasofor=0;
-											$('#btnayuda').hide();
-											break;
 										
-										}
-									}
+										if(pasofor==1){
+										pasofor=0;
+										$('#btnayuda').hide();
+										
+										
+										
+										if(pal==palabra){
+				juegopalabra=juegopalabra+1;
+										$('.a1').show();
+						switch (juegopalabra)
+						{
+							case 2:
+								alert("PALABRA CORRECTA:  INTEGRAL INMEDIATA");
+								palabra ="_ 1 * # $ + .";
+						 		pal="F U N C I O N";
+								$('#titulo').html("NIVEL 2");
+								break;
+							case 3:
+								alert("PALABRA CORRECTA:  FUNCION");
+								palabra ="- * + } { _ ? ( ) # 2 6 !";
+						 		pal="F A C T O R I Z A C I O N";
+								$('#titulo').html("NIVEL 3");
+								break;
+							case 4:
+								alert("PALABRA CORRECTA:  FACTORIZACION");
+								palabra ="{ } 4 . _ ¿ ? *";
+						 		pal="D E R I V A D A";
+								$('#titulo').html("NIVEL 4");
+								break;
+							case 5:
+								alert("PALABRA CORRECTA:  DERIVADA");
+								palabra ="* _ } { ¡ ! ? ¿ . 1 [ 4";
+						 		pal="A N T I D E R I V A D A";
+								$('#titulo').html("NIVEL 5");
+								break;
+							case 6:
+								alert("PALABRA CORRECTA:  ANTIDERIVADA");
+								palabra ="} { _ - , : . ? ¡ ! 1";
+						 		pal="S U S T I T U C I O N";
+								$('#titulo').html("NIVEL 6");
+								break;
+							case 7:
+								alert("PALABRA CORRECTA:  SUSTITUCION");
+								palabra ="- _ ! 2 ¡ ? } { # $ % / ( ) 3 6 . , = ¿ 9 * ] [";
+						 		pal="F U N C I O N E S T R I G O N O M E T R I C A S";
+								$('#titulo').html("NIVEL 7");
+								break;
+							case 8:
+								alert("PALABRA CORRECTA:  FUNCIONES TRIGONOMETRICAS");
+								palabra ="+ * { } , . ? 5 ] [ 1 8 ¡ ! ¿";
+						 		pal="A R E A B A J O L A C U R V A";
+								$('#titulo').html("NIVEL 8");
+								break;
+							case 9:
+								alert("PALABRA CORRECTA:  AREA BAJO LA CURVA");
+								palabra ="* _ . , 9 ¡ ! ¿ ? + ; % $ = 2 6";
+						 		pal="V A R I A B L E A U X I L I A R";
+								$('#titulo').html("NIVEL 9");
+								break;
+							case 10:
+								alert("PALABRA CORRECTA:  VARIABLE AUXILIAR");
+								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 / . 3 0";
+						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
+								$('#titulo').html("NIVEL 10");
+								break;
+							case 11:
+								alert("PALABRA CORRECTA:  IDENTIDADES TRIGONOMETRICAS ");
+								$(location).attr('href','#resultado'); 
+								$('#resultadofinal').html(suma);	
+								if(suma<=60){
+									$('#rango').html("MALO");
+									$("#rango").css("background-color","#FF0000")			
+								}else if(suma<=90)
+								{
+									$('#rango').html("REGULAR");
+									$("#rango").css("background-color","#FFFF00")
+								}else if(suma<=130){
+									$('#rango').html("BUENO");
+									$("#rango").css("background-color","#40FF00")
+								}else{
+									$('#rango').html("EXCELENTE");	
+									$("#rango").css("background-color","#04B404")
+								}
+								
+								break;
+						}
+						
+						$('#palabra').html(palabra);	
+						$('#btnayuda').show();
+						$("#imagen").attr("src","images/p1.jpg");
+						oportunidades = 4;
+			}
+							break;
+								
+						}
+					}
 									
 									//alert(l);
-							}
+				}
 							
-							//alert(mod);
-						}
-	});
+				
+			
+			}
+		});
 	
 });
 });
