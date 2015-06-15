@@ -7,7 +7,7 @@ document.addEventListener("deviceready",function(){
 		var y=0;
 		var oportunidades = 4;
 		var juegopalabra = 1;
-		
+		var pasofor=0;
 		
 		var pal="";
 		var palabra="";
@@ -71,19 +71,19 @@ document.addEventListener("deviceready",function(){
 								$('#titulo').html("NIVEL 4");
 								break;
 							case 5:
-								alert("derivada es un término que puede utilizarse como sustantivo o como adjetivo. En el primer caso, se trata de una noción de la matemática que nombra al valor límite del vínculo entre el aumento del valor de una función y el aumento de la variable independiente.");
+								alert("Derivada es un término que puede utilizarse como sustantivo o como adjetivo. En el primer caso, se trata de una noción de la matemática que nombra al valor límite del vínculo entre el aumento del valor de una función y el aumento de la variable independiente.");
 								palabra ="* _ } { ¡ ! ? ¿ . 1 [ 4";
 						 		pal="A N T I D E R I V A D A";
 								$('#titulo').html("NIVEL 5");
 								break;
 							case 6:
-								alert("es la función que resulta del proceso inverso de la derivación, es decir, consiste en encontrar una función que, al ser derivada produce la función dada.")
+								alert("Es la función que resulta del proceso inverso de la derivación, es decir, consiste en encontrar una función que, al ser derivada produce la función dada.")
 								palabra ="} { _ - , : . ? ¡ ! 1";
 						 		pal="S U S T I T U C I O N";
 								$('#titulo').html("NIVEL 6");
 								break;
 							case 7:
-								alert("se basa en realizar un reemplazo de variables adecuado que permita convertir el integrando en algo sencillo con una integral o antiderivada simple.")
+								alert("Se basa en realizar un reemplazo de variables adecuado que permita convertir el integrando en algo sencillo con una integral o antiderivada simple.")
 								palabra ="- _ ! 2 ¡ ? } { # $ % / ( ) 3 6 . , = ¿ 9 * ] [";
 						 		pal="F U N C I O N E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 7");
@@ -101,22 +101,23 @@ document.addEventListener("deviceready",function(){
 								$('#titulo').html("NIVEL 9");
 								break;
 							case 10:
+								alert("Es el cambio de variable para realizar una integral y consiste en igualar una parte del integrado a una nueva variable, (la podemos llamar U,V)");
 								palabra ="* _ 6 , 9 ¡ ! ¿ ? + ; % $ [ 4 8 ) { 5 # 2 1 ° . 3 0";
 						 		pal="I D E N T I D A D E S T R I G O N O M E T R I C A S";
 								$('#titulo').html("NIVEL 10");
 								break;
 							case 11:
-								alert("cos² α + sen² α = 1-------- sec² α = 1 + tg² α------- cosec² α = 1 + cotg² α");
+								alert("cos² α + sen² α = 1                    sec² α = 1 + tg² α                       cosec² α = 1 + cotg² α");
 								$(location).attr('href','#resultado'); 
 								$('#resultadofinal').html(suma);	
 								if(suma<=60){
 									$('#rango').html("MALO");
 									$("#rango").css("background-color","#FF0000")			
-								}else if(suma<=80)
+								}else if(suma<=90)
 								{
 									$('#rango').html("REGULAR");
 									$("#rango").css("background-color","#FFFF00")
-								}else if(suma<=100){
+								}else if(suma<=130){
 									$('#rango').html("BUENO");
 									$("#rango").css("background-color","#40FF00")
 								}else{
@@ -126,6 +127,7 @@ document.addEventListener("deviceready",function(){
 								
 						}
 						$('.a1').show();
+						$('#btnayuda').show();
 						$('#palabra').html(palabra);	
 						
 						$("#imagen").attr("src","images/p1.jpg");
@@ -147,9 +149,9 @@ document.addEventListener("deviceready",function(){
 		 
 		 
 		 if(!existe){
-				    
+	suma=suma-1;			    
 	oportunidades--; 
-	//alert() 	
+	
 		switch (oportunidades)
 	{
 		case 3:
@@ -226,29 +228,30 @@ document.addEventListener("deviceready",function(){
 								if(suma<=60){
 									$('#rango').html("MALO");
 									$("#rango").css("background-color","#FF0000")			
-								}else if(suma<=80)
+								}else if(suma<=90)
 								{
 									$('#rango').html("REGULAR");
 									$("#rango").css("background-color","#FFFF00")
-								}else if(suma<=100){
+								}else if(suma<=130){
 									$('#rango').html("BUENO");
 									$("#rango").css("background-color","#40FF00")
 								}else{
 									$('#rango').html("EXCELENTE");	
 									$("#rango").css("background-color","#04B404")
 								}
+								
 								break;
 						}
 						
 						$('#palabra').html(palabra);	
-		
+						$('#btnayuda').show();
 						$("#imagen").attr("src","images/p1.jpg");
 						oportunidades = 4;
 	}
 		
-		//break;
-			}
 		
+			}
+	//	alert(suma);
 		});
 		
 		
@@ -273,6 +276,41 @@ document.addEventListener("deviceready",function(){
 			oportunidades = 4;
 			juegopalabra = 1;
 		});
+	
+	
+	$('#btnayuda').on('click', function (){
+		
+						for (i = 0; i < palabra.length; i ++)
+						
+						{
+								var mod=i%2;
+							if(mod==0){
+									var l=palabra.charAt(i);
+									var lp=pal.charAt(i);
+									//alert(lp);
+									//var sig=palabra.charAt(i);
+									if(l=="A" || l=="B"||l=="C"||l=="D"||l=="E"||l=="F"||l=="G"||l=="H"||l=="I"||l=="J"||l=="K"||l=="L"||l=="M"||l=="N"||l=="O"||l=="P"||l=="Q"||l=="R"||l=="S"||l=="T"||l=="U"||l=="V"||l=="W"||l=="X"||l=="Y"||l=="Z"){
+									//	alert("Letra");
+									
+									}else{
+										var remplaso=palabra.replace(l,lp) 
+										$("#palabra").text(remplaso);
+										palabra=document.getElementById("palabra").innerHTML;
+										pasofor=pasofor+1;
+										if(pasofor==1){
+											pasofor=0;
+											$('#btnayuda').hide();
+											break;
+										
+										}
+									}
+									
+									//alert(l);
+							}
+							
+							//alert(mod);
+						}
+	});
 	
 });
 });
