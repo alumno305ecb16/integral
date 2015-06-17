@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {	
-//document.addEventListener("deviceready",function(){
+document.addEventListener("deviceready",function(){
 
 		var suma=0;
 			
@@ -313,4 +313,4 @@ $(document).ready(function(e) {
 	});
 	
 });
-//});
+});
