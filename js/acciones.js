@@ -19,7 +19,7 @@ document.addEventListener("deviceready",function(){
 	
 		var suma=0;
 		
-		$('.a1').on('click', function (){
+		$('.a1').on('tap', function (){
 						
 		var idletra = $(this).attr('id')
 		var existe = false;
@@ -278,7 +278,7 @@ document.addEventListener("deviceready",function(){
 		});
 	
 	
-	$('#btnayuda').on('click', function (){
+	$('#btnayuda').on('tap', function (){
 		
 						for (i = 0; i < palabra.length; i ++)
 						
