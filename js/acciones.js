@@ -278,7 +278,7 @@ document.addEventListener("deviceready",function(){
 		});
 	
 	
-	$('#btnayuda').on('tap', function (){
+	$('#btnayuda').on('click', function (){
 		
 						for (i = 0; i < palabra.length; i ++)
 						
